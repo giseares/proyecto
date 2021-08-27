@@ -1,3 +1,4 @@
+<!--BANNER-->
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner2.jpg" %>')">
   <div class="container">
     <h1>Calimba</h1>
@@ -9,14 +10,16 @@
   </div>
 </div>
 
-<!--SECTION1-->
-<div id="section">
+<!--SECTION-NOSOTRAS-->
+<div id="aboutCalimba">
   <div class="container">
-    <div class="d-flex justify-content-between ">
-      <div>
+    <div class="d-flex justify-content-between">
+      <div class="leftspace">
         <h2>Sobre Calimba</h2>
-        <%= image_tag "flor_profile.jpg", class: "avatar"%>
-        <%= image_tag "gise_profile.jpg", class: "avatar"%>
+        <div class="mt-5">
+          <%= image_tag "gise_profile.png", class: "avatar-large"%>
+          <%= image_tag "flor_profile.png", class: "avatar-large"%>
+        </div>
       </div>
       <div>
         <p class="">
@@ -31,6 +34,9 @@
   </div>
     
 </div>
+
+
+
 
 
 </div>

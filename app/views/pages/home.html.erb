@@ -1,24 +1,36 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner.jpg" %>')">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner2.jpg" %>')">
   <div class="container">
     <h1>Calimba</h1>
-    <p>Profesionales en el Camino</p>
+    <p>Profesionales en el camino</p>
+    <p> 
+      <span id="banner-typed-text"></span>
+    </p>
     <a class="btn btn-outline-secondary"  target="_blank" href="https://api.whatsapp.com/send?phone=54911533842626">WhatsApp</a>
   </div>
 </div>
 
-<div class="container">
-  <div class="mt-3">
-    <blockquote class="blockquote text-center">
-      <p class="mb-0">Vamos despacio</p>
-      <footer class="blockquote-footer">Porque vamos <cite title="Source Title">lejos</cite></footer>
-    </blockquote>
+<!--SECTION1-->
+<div id="section">
+  <div class="container">
+    <div class="d-flex justify-content-between ">
+      <div>
+        <h2>Sobre Calimba</h2>
+        <%= image_tag "flor_profile.jpg", class: "avatar"%>
+        <%= image_tag "gise_profile.jpg", class: "avatar"%>
+      </div>
+      <div>
+        <p class="">
+        Calimba es un proyecto con el cual hemos comenzado a recorrer el continente americano impartiendo programas de educación continua, brindando servicios de consultoría, mentoring y coaching tanto a particulares como empresas.
+        </p>
+        <p class="">
+        Nuestro porfolio contiene más de veinte programas customizados según la necesidad del usuario.
+        Nuestra misión es ayudarte en tu desarrollo profesional, contribuir con el crecimiento de tu negocio y acompañarte a descubrir un nuevo mundo de profesionales en el camino. Calimba está de paso, pero deja huellas.
+        </p>
+      </div>
+    </div>
   </div>
-
-  <div class= "d-flex justify-content-between mt-5 align-items-center">
-    <%= image_tag "unsplash_helena-lopes.jpg", class: "motivational mr-3"%>
-    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo possimus perferendis veniam reprehenderit, perspiciatis repellat, natus ullam ratione doloribus quibusdam dolorem sunt exercitationem, odit praesentium eius quaerat aspernatur quasi consectetur?</h3>
-  </div>
-
+    
+</div>
 
 
 </div>

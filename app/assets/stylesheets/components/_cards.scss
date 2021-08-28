@@ -2,6 +2,8 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: auto;
+
 }
 
 .card-trip img {
@@ -22,21 +24,13 @@
   margin: 0;
 }
 
-
 .card-trip .card-trip-infos {
   padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  position: relative;
 }
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
 
 .card-category {
   background-size: cover;

@@ -4,13 +4,15 @@
 
 #aboutCalimba h2{
   font-size: 56px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Titilium Web;
+  font-weight: 600;
   color: rgb(80, 75, 75);
 }
 
 #aboutCalimba p{
   font-size: 14px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Quicksand;
+  font-weight: 500;
   color: rgb(80, 75, 75);
   padding: 12px 114px ;
   line-height: 2.2;
@@ -18,4 +20,9 @@
 
 #aboutCalimba .leftspace{
   padding: 12px 84px 12px 114px ;
+  width: fit-content;
+}
+
+#aboutCalimba .leftspace p{
+  padding: 0;
 }

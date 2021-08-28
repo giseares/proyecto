@@ -8,4 +8,15 @@ const loadDynamicBannerText = () => {
   });
 }
 
-export { loadDynamicBannerText };
+
+const loadDynamicAboutUsText = () => {
+  new Typed('#aboutus-typed-text', {
+    strings: [ "Haciendo click mira nuestro linkedin"],
+    typeSpeed:50,
+    loop: true
+  });
+}
+
+loadDynamicAboutUsText();
+
+export { loadDynamicBannerText, loadDynamicAboutUsText };

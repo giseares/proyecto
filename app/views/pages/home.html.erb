@@ -12,20 +12,19 @@
 
 <!--SECTION-NOSOTRAS-->
 <div id="aboutCalimba">
-  <div class="container">
+  <div class="container my-5">
     <div class="d-flex justify-content-between">
       <div class="leftspace">
         <h2>Sobre Calimba</h2>
-        <div class="mt-5">
+        <div class=" d-flex justify-content-between mt-5">
           <%= link_to image_tag("gise_profile", class: "avatar-large", alt: "Gise Profile"), "https://www.linkedin.com/in/gares/", target: :_blank %>
-          <%= link_to image_tag("flor_profile", class: "avatar-large", alt: "FlorProfile"), "https://www.linkedin.com/in/cernuschiflorencia/", target: :_blank %>
+          <%= link_to image_tag("flor_profile", class: "avatar-large", alt: "FlorProfile"), "https://www.linkedin.com/in/cernuschiflorencia/",target: :_blank %>
         </div>
+        <p> <span id="aboutus-typed-text"></span> </p>
       </div>
       <div>
         <p class="">
         Calimba es un proyecto con el cual hemos comenzado a recorrer el continente americano impartiendo programas de educación continua, brindando servicios de consultoría, mentoring y coaching tanto a particulares como empresas.
-        </p>
-        <p class="">
         Nuestro porfolio contiene más de veinte programas customizados según la necesidad del usuario.
         Nuestra misión es ayudarte en tu desarrollo profesional, contribuir con el crecimiento de tu negocio y acompañarte a descubrir un nuevo mundo de profesionales en el camino. Calimba está de paso, pero deja huellas.
         </p>
@@ -36,7 +35,75 @@
 </div>
 
 
+<!--OUR SERVICES-->
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h2>CONOCE NUESTRA PROPUESTA</h2>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div class="card-trip ml-2">
+      <%= link_to image_tag("unsplash_helena-lopes.jpg", class:"img", :border=>0), :action => 'cursos', :controller => 'pages' %>
+      <div class="card-trip-infos">
+        <div>
+          <h2>Formación Profesional</h2>
+          <p>Sabemos que los programas de capacitación a colaboradores son muy
+          fructíferos para las compañías, permiten afianzar grupos, detectar líderes, generan competencia
+          y facilitan la gestión de cambio.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="card-trip ml-2">
+      <%= link_to image_tag("banner2.jpg", class:"img", :border=>0),   :action => 'buceo', :controller => 'pages' %>
+      <div class="card-trip-infos">
+        <div>
+          <h2>Programa de Consultoría</h2>
+          <p>A partir de las necesidades de la gerencia y una serie de entrevistas in situ la mejora de procesos
+          se trata de identificar y abordar las ineficiencias que desperdician recursos/capital y añaden
+          costos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-trip ml-2">
+      <%= link_to image_tag("abouts_profile.png", class:"img", :border=>0), :action => 'blogs', :controller => 'pages' %>
+      <div class="card-trip-infos">
+        <div>
+          <h2>Coaching Empresarial</h2>
+          <p>El coach te ayuda a ver su entorno, abre su visión y le ayuda a pensar en tus habilidades para
+          desarrollar. Un valioso compañero externo que camina a su lado por un tiempo bien definido
+          para que su personal encuentre nuevas soluciones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-around align-items-center my-5">
+    <a class="btn btn-outline-info btn-lg rounded-lg"  target="_blank" href="https://api.whatsapp.com/send?phone=54911533842626">Empresa</a>
+    <a class="btn btn-outline-success btn-lg rounded-lg"  target="_blank" href="https://api.whatsapp.com/send?phone=54911533842626">Particular</a>
+  </div>
+
+
+
+</div>
+
+<!--CALIMBA BUCEAND POR AMERICA>-->
+<div class="container my-5">
+  <div class="text-center">
+    <h2>Calimba</h2>
+    <p>Buceando por America</p>
+  </div>
+
+<div class="d-flex justify-content-between">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "buceo.JPG" %>')">
+    Buceo
+  </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "buceo.JPG" %>')">
+    Primeros Auxilios
+  </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "buceo.JPG" %>')">
+    Medio AMbiente
+  </div>
+</div>
 
 
 </div>

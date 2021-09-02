@@ -1,7 +1,12 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :portfolio, :buceo ]
+  skip_before_action :authenticate_user!, only: [ :home, :portfolio, :buceo, :proyecto ]
 
   def home
+  #  if user_signed_in?
+  #    flash.now[:notice] = 'Message sent!'
+  #  else
+  #    flash.now[:alert] = 'Error while sending message!'
+  #  end
   end
 
   def portfolio
@@ -13,4 +18,6 @@ class PagesController < ApplicationController
   def blogs
   end
 
+  def proyecto
+  end
 end

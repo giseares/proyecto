@@ -1,5 +1,5 @@
 <!--BANNER-->
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner2.jpg" %>')">
+<div class="banner img-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner2.jpg" %>')">
   <div class="container">
     <h1>Calimba</h1>
     <p>Profesionales en el camino</p>
@@ -69,6 +69,7 @@
 
     <div class="col-12 col-lg-3 card-trip mr-2 mb-2">
       <%= link_to image_tag("abouts_profile.png", class:"img", :border=>0), :action => 'portfolio', :controller => 'pages' %>
+
       <div class="card-trip-infos">
         <div>
           <h2>Coaching Empresarial</h2>
@@ -91,7 +92,7 @@
     <div class= "text-center">
       <h1>Calimba</h1>
       <p>Buceando por America</p>
-      <a class="btn btn-outline-secondary"  target="_blank" href="https://api.whatsapp.com/send?phone=54911533842626">Conoce nuestro proyecto</a>
+        <%= link_to "Conoce nuestro recorrido", proyecto_path, :class => "btn btn-outline-secondary" %>
     </div>
   </div>
 </div>
@@ -104,15 +105,25 @@
     <h2>Descubre un nuevo mundo</h2>
     <p>certificaciones a nivel internacional</p>
   </div>
+
   <div class="row d-flex justify-content-between text-center">
-    <div class="col-12 col-lg-3 card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "buceo.JPG" %>')">
-      Buceo <br> Sumergite en la aventura </br>
+    <div class="col-12 col-lg-3 card-category d-flex flex-column" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "buceo.JPG" %>')">
+      Buceo 
+      <p>
+        <%= link_to "Sumergite en la aventura", buceo_path %> 
+      </p>
     </div>
-    <div class="col-12 col-lg-3 card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "primeros.jpg" %>')">
-      Primeros Auxilios Convertite en Instuctor
+    <div class="col-12 col-lg-3 card-category d-flex flex-column"" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "primeros.jpg" %>')">
+      Primeros Auxilios
+      <p>
+        <%= link_to " Convertite en Instuctor", buceo_path %> 
+      </p>
     </div>
-    <div class="col-12 col-lg-3 card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "medio.jpg" %>')">
-      Medio Ambiente HAce la diferencis
+    <div class="col-12 col-lg-3 card-category d-flex flex-column"" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "medio.jpg" %>')">
+      Medio Ambiente 
+      <p>
+        <%= link_to "Hace la diferencia", buceo_path %> 
+      </p>
     </div>
   </div>
 </div>

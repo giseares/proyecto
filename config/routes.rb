@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     get 'portfolio', to: 'pages#portfolio'
     get 'buceo', to: 'pages#buceo'
     get 'blogs', to: 'pages#blogs'
+    get 'proyecto', to: 'pages#proyecto'
 end

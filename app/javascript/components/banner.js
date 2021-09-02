@@ -5,8 +5,7 @@ const loadDynamicBannerText = () => {
     strings: [ "Programas de capacitación", "Coaching & Mentoring", "Servicios de Consultoria", "Training en Primeros Auxilios"],
     typeSpeed:50,
     loop: true
-  });
-}
+  });}
 
 
 const loadDynamicAboutUsText = () => {

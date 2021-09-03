@@ -14,20 +14,20 @@
 <div id="aboutCalimba">
   <div class="container my-5">
     <div class="row d-flex justify-content-between">
-
-      <div class="col-12 col-lg-6 leftspace text-center">
-        <h2>SOBRE CALIMBA</h2>
-        <div class=" d-flex justify-content-center">
+      <div class="col-12 col-lg-6 leftspace text-center mb-4">
+        <h2>Sobre Calimba</h2>
+        <div class=" d-flex justify-content-center mb-3">
           <%= link_to image_tag("gise_profile", class: "avatar-large mr-2", alt: "Gise Profile"), "https://www.linkedin.com/in/gares/", target: :_blank %>
           <%= link_to image_tag("flor_profile", class: "avatar-large", alt: "FlorProfile"), "https://www.linkedin.com/in/cernuschiflorencia/",target: :_blank %>
         </div>
         <p> <span id="aboutus-typed-text"></span> </p>
       </div>
 
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 text-center">
         <p>Calimba es un proyecto con el cual hemos comenzado a recorrer el continente americano impartiendo programas de educación continua, brindando servicios de consultoría, mentoring y coaching tanto a particulares como empresas.
         Nuestro porfolio contiene más de veinte programas customizados según la necesidad del usuario.
-        Nuestra misión es ayudarte en tu desarrollo profesional, contribuir con el crecimiento de tu negocio y acompañarte a descubrir un nuevo mundo de profesionales en el camino. Calimba está de paso, pero deja huellas.</p>
+        Nuestra misión es ayudarte en tu desarrollo profesional, contribuir con el crecimiento de tu negocio y acompañarte a descubrir un nuevo mundo de profesionales en el camino. </p>
+        <p><strong>Calimba está de paso</strong>, pero deja huellas.</p>
       </div>
 
     </div>
@@ -35,11 +35,10 @@
   </div>    
 </div>
 
-
 <!--OUR SERVICES / PORTFOLIO-->
 <div class="container my-5">
   <div class="text-center mb-5">
-    <h2>CONOCE NUESTRA PROPUESTA</h2>
+    <h2>Conoce nuestra propuesta</h2>
   </div>
 
   <div class="row d-flex justify-content-around">
@@ -47,8 +46,8 @@
       <%= link_to image_tag("unsplash_helena-lopes.jpg", class:"img", :border=>0), :action => 'portfolio', :controller => 'pages' %>
       <div class="card-trip-infos">
         <div>
-          <h2>Formación Profesional</h2>
-          <p>Sabemos que los programas de capacitación a colaboradores son muy
+          <h5 class= "m-2 text-center"><strong>Formación Profesional</strong></h5>
+          <p class ="text-center">Sabemos que los programas de capacitación a colaboradores son muy
           fructíferos para las compañías, permiten afianzar grupos, detectar líderes, generan competencia
           y facilitan la gestión de cambio.</p>
         </div>
@@ -59,8 +58,8 @@
       <%= link_to image_tag("banner2.jpg", class:"img", :border=>0),   :action => 'portfolio', :controller => 'pages' %>
       <div class="card-trip-infos">
         <div>
-          <h2>Programa de Consultoría</h2>
-          <p>A partir de las necesidades de la gerencia y una serie de entrevistas in situ la mejora de procesos
+          <h5 class= "m-2 text-center"> <strong>Programa de Consultoría</strong></h5>
+          <p class ="text-center">A partir de las necesidades de la gerencia y una serie de entrevistas in situ la mejora de procesos
           se trata de identificar y abordar las ineficiencias que desperdician recursos/capital y añaden
           costos.</p>
         </div>
@@ -72,8 +71,8 @@
 
       <div class="card-trip-infos">
         <div>
-          <h2>Coaching Empresarial</h2>
-          <p>El coach te ayuda a ver su entorno, abre su visión y le ayuda a pensar en tus habilidades para
+          <h5 class= "m-2 text-center"><strong>Coaching Empresarial</strong></h5>
+          <p class ="text-center">El coach te ayuda a ver su entorno, abre su visión y le ayuda a pensar en tus habilidades para
           desarrollar. Un valioso compañero externo que camina a su lado por un tiempo bien definido
           para que su personal encuentre nuevas soluciones.</p>
         </div>
@@ -97,32 +96,27 @@
   </div>
 </div>
 
-
-
 <!--CALIMBA BUCEAND POR AMERICA>-->
 <div class="container my-5">
   <div class="text-center mb-5">
     <h2>Descubre un nuevo mundo</h2>
-    <p>certificaciones a nivel internacional</p>
+    <p>Certificaciones a <strong>nivel internacional</strong></p>
   </div>
 
   <div class="row d-flex justify-content-between text-center">
     <div class="col-12 col-lg-3 card-category d-flex flex-column" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "buceo.JPG" %>')">
-      Buceo 
-      <p>
-        <%= link_to "Sumergite en la aventura", buceo_path %> 
+      <p class="text">
+        <%= link_to "Buceo", buceo_path %> 
       </p>
     </div>
     <div class="col-12 col-lg-3 card-category d-flex flex-column"" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "primeros.jpg" %>')">
-      Primeros Auxilios
-      <p>
-        <%= link_to " Convertite en Instuctor", buceo_path %> 
+      <p  class="text" >
+        <%= link_to " Instructor Primeros Auxilios", buceo_path %> 
       </p>
     </div>
     <div class="col-12 col-lg-3 card-category d-flex flex-column"" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "medio.jpg" %>')">
-      Medio Ambiente 
-      <p>
-        <%= link_to "Hace la diferencia", buceo_path %> 
+      <p  class="text" > 
+        <%= link_to "Cuidado del Medio Ambiente", buceo_path %> 
       </p>
     </div>
   </div>

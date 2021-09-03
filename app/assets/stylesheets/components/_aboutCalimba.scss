@@ -1,26 +1,24 @@
 #aboutCalimba{
   padding: 90px 0px;
-}
 
-#aboutCalimba h2{
-  font-size: 56px;
-  font-family: Titilium Web;
-  font-weight: 600;
-  color: rgb(80, 75, 75);
-}
+  h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: rgb(80, 75, 75);
+  }
 
-#aboutCalimba p{
-  font-size: 14px;
-  font-family: Quicksand;
-  font-weight: 500;
-  color: rgb(80, 75, 75);
-  line-height: 2.2;
-}
+  p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(80, 75, 75);
+    line-height: 2;
+  }
 
-#aboutCalimba .leftspace{
-  width: fit-content;
-}
+  .leftspace{
+    width: fit-content;
+  }
 
-#aboutCalimba .leftspace p{
-  padding: 0;
+  .leftspace p{
+    padding: 0;
+  }
 }

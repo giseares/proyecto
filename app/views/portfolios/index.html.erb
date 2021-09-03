@@ -1,2 +1,34 @@
-<h1>Portfolios#index</h1>
-<p>Find me in app/views/portfolios/index.html.erb</p>
+<div class="banner_central" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "unsplash_marvin-meyer.jpg" %>')">
+  <div class="container">
+    <div class= "text-center">
+      <h1>Nuestra Propuesta</h1>
+      <p>Conoce nuestos cursos de formacion</p>
+    </div>
+  </div>
+</div>
+
+<%= form_tag portfolios_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a Course"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <div id="movies">
+        <% @portfolios.each do |p| %>
+          <%# if p.category == "Buceo"  %>
+            <h4><%= p.name %></h4>
+            <p><%= p.content %></p>
+            <p><%= image_tag(p.url_image) %></p>
+          <%# end %>  
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

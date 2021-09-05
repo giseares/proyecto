@@ -1,3 +1,4 @@
+<!--BANNER-->
 <div class="banner_central" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "coaching_unsplash_jamie_street.jpg" %>')">
   <div class="container">
     <div class= "text-center">
@@ -7,6 +8,7 @@
   </div>
 </div>
 
+<!--INTRO-->
 <div class="container mt-5">
   <p>
     El ser humano tiene un gran poder de adaptabilidad, tiene la capacidad de resolver situaciones realmente complejas en lugares y momentos inimaginables. De la misma forma en la que un buceador aprende a planificar sus inmersiones para alcanzar sus metas y entrena para la resolución inmediata de situaciones extremas, una persona en superficie puede enfrentar la misma adversidad, solo que las alternativas son más amplias, allí el aire nunca se acaba.
@@ -18,53 +20,61 @@
 
 </div>
 
-<div class="container d-flex justify-content-between mb-5">
-  <div class="card" style="width: 18rem;">
-    <%= link_to image_tag("coaching_unsplash_daniel-thomas.jpg", alt:"Consultoria", class:"rounded imagen-coach", :border=>0) %>
-    <div class="card-body text-center">
-      <h5 class="card-title">Emprendedres</h5>
-      <p class="card-text">Aprende a transitar este camino de forma eficiente, superar tus miedos, enfocándote en lo realmente importa superando los momentos más complicados y disfrutando del éxito.</p>
-    </div>
-    <div class="d-flex align-items-end justify-content-center mb-2">
-      <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Emprendedores%20-%20Informacion">Reserva tu sesion</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <%= link_to image_tag("coaching_unsplash_charles-forerunner.jpeg", alt:"Consultoria", class:"rounded imagen-coach", :border=>0) %>
-    <div class="card-body text-center">
-      <h5 class="card-title">Empresarios</h5>
-      <p class="card-text">Que quieren empezar una nueva etapa en su carrera o negocio, gestionando de manera más efectiva y vital todo su conocimiento y experiencia. Aprende a disfrutar el proceso transformacional en armonía con tu ecosistema actual.</p>
-    </div>
-    <div class="d-flex align-items-end justify-content-center mb-2">
-      <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Empresarios%20-%20Informacion">Reserva tu sesion</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <%= link_to image_tag("coaching_unsplash_element5-digital.jpg", alt:"Consultoria", class:"rounded imagen-coach", :border=>0) %>
-    <div class="card-body text-center">
-      <h5 class="card-title">Estudiantes/Universitarios</h5>
-      <p class="card-text">Aprende a visualizarte y concentrarte en lo que te apasiona, transita el proceso de aprendizaje adquiriendo metodologías que te ayudaran también en el ámbito laboral, aprende a gestionar emociones y planifica tu próximo paso al éxito.</p>
-    </div>
-    <div class="d-flex align-items-end justify-content-center mb-2">
-      <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Estudiantes%20-%20Informacion">Reserva tu sesion</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <%= link_to image_tag("coaching_unsplashkira-auf-der-heide.jpg", alt:"Consultoria", class:"rounded imagen-coach", :border=>0) %>
-    <div class="card-body text-center">
-      <h5 class="card-title">Viajeros</h5>
-      <p class="card-text">Aprende a despojarte de juicios y atrévete a romper paradigmas, redescubre tus herramientas y aprende a utilizarlas para convertirte e viajero de tiempo completo, te acompañare en el proceso para que dejes de soñar con hacerlo y lo conviertas en un plan listo para ejecutar.</p>
-    </div>
-    <div class="d-flex align-items-end justify-content-center mb-2">
-      <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Viajeros%20-%20Informacion">Reserva tu sesion</a>
-    </div>
-  </div>
-
+<div class="container text-center my-5">
+  <h3>A quien va dirigido mi trabajo</h3>
 </div>
 
+<!--CARDS-->
+<div class="container">
+  <div class="d-flex justify-content-center mb-5 row">
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("coaching_unsplash_daniel-thomas.jpg", alt:"Emprendedores", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Emprendedres</h5>
+        <p class="card-text">Aprende a transitar este camino de forma eficiente, superar tus miedos, enfocándote en lo realmente importa superando los momentos más complicados y disfrutando del éxito.</p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Emprendedores%20-%20Informacion">Reserva tu sesion</a>
+      </div>
+    </div>
+
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("coaching_unsplash_charles-forerunner.jpeg", alt:"Empresaarios", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Empresarios</h5>
+        <p class="card-text">Que quieren empezar una nueva etapa en su carrera o negocio, gestionando de manera más efectiva y vital todo su conocimiento y experiencia. Aprende a disfrutar el proceso transformacional en armonía con tu ecosistema actual.</p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Empresarios%20-%20Informacion">Reserva tu sesion</a>
+      </div>
+    </div>
+
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("coaching_unsplash_element5-digital.jpg", alt:"Estudiantes", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Estudiantes/Universitarios</h5>
+        <p class="card-text">Aprende a visualizarte y concentrarte en lo que te apasiona, transita el proceso de aprendizaje adquiriendo metodologías que te ayudaran también en el ámbito laboral, aprende a gestionar emociones y planifica tu próximo paso al éxito.</p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Estudiantes%20-%20Informacion">Reserva tu sesion</a>
+      </div>
+    </div>
+
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("coaching_unsplashkira-auf-der-heide.jpg", alt:"Viajeros", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Viajeros</h5>
+        <p class="card-text">Aprende a despojarte de juicios y atrévete a romper paradigmas, redescubre tus herramientas y aprende a utilizarlas para convertirte e viajero de tiempo completo, te acompañare en el proceso para que dejes de soñar con hacerlo y lo conviertas en un plan listo para ejecutar.</p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Coaching%20Viajeros%20-%20Informacion">Reserva tu sesion</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--FINAL-->
 <div class="container mt-5">
   <h3>Nuestra metodología:</h3>
 

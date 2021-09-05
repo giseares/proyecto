@@ -4,3 +4,17 @@
   right: 16px;
   z-index: 1000;
 }
+
+.alert-text{
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+.texto-encima{
+  position: absolute;
+  color: black;
+  font-size: 8px;
+  top: 410px;
+  left: 150px;
+}
+

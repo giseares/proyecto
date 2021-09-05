@@ -16,7 +16,7 @@ design = Portfolio.create!(
   content: "Foco en los fundamentos teóricos y prácticos de todas las etapas del Design Thinking,
   enfocados en la creación de propuestas basadas en las experiencias y la mirada de
   usuarios.",
-  url_image: "banner.jpg"
+  url_image: 'pf01_unsplash_daria-nepriakhina'
 )
 
 canva = Portfolio.create!(

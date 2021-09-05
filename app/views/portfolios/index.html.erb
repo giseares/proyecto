@@ -7,28 +7,53 @@
   </div>
 </div>
 
-<%= form_tag portfolios_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a Course"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-
-
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-sm-8">
-      <div id="movies">
-        <% @portfolios.each do |p| %>
-          <%# if p.category == "Buceo"  %>
-            <h4><%= p.name %></h4>
-            <p><%= p.content %></p>
-            <p><%= image_tag(p.url_image) %></p>
-          <%# end %>  
-        <% end %>
-      </div>
+<!--PROFESIONAL-->
+<div id=profesional></div>
+<div class="banner_curso_profesional my-5">
+  <div class="container">
+    <div class= "text-center">
+      <h1>Formacion Profesional</h1>
+      <p>Conoce nuestos cursos de formacion profesional, orientados para tu empresa</p>
     </div>
   </div>
 </div>
+
+<%  @portfolios_profesional.each do |p| %>
+  <div class="container my-3 buceando border-left-0 border-info rounded-left rounded-lg">
+      <div class= "d-flex py-3">
+        <div>
+          <h3><%= p.name %></h3>
+          <p><%= p.content %></p>
+          <a class="btn btn-outline-success"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<!--CONSULTORIA-->
+<div id=consultoria></div>
+  <div class="banner_curso_profesional my-5">
+    <div class="container">
+      <div class= "text-center">
+        <h1>Consultoria</h1>
+        <p>Conoce nuestra propuesta de consultoria integral</p>
+      </div>
+    </div>
+  </div>
+
+<%  @portfolios_consultoria.each do |p| %>
+  <div class="container my-3 buceando border-left-0 border-info rounded-left rounded-lg">
+      <div class= "d-flex py-3">
+        <div>
+          <h3><%= p.name %></h3>
+          <p><%= p.content %></p>
+          <a class="btn btn-outline-success"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
+

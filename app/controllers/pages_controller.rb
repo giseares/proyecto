@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :buceo, :proyecto ]
+  skip_before_action :authenticate_user!, only: [ :home, :buceo, :proyecto , :coaching]
 
   def home
   #  if user_signed_in?
@@ -19,5 +19,8 @@ class PagesController < ApplicationController
   end
 
   def proyecto
+  end
+
+  def coaching
   end
 end

@@ -31,8 +31,9 @@ import { loadDynamicBannerText } from '../components/banner';
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   initUpdateNavbarOnScroll();
-  loadDynamicBannerText();
   loadDynamicAboutUsText();
+  loadDynamicBannerText();
+
 
 });
 

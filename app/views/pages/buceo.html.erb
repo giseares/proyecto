@@ -1,14 +1,47 @@
 <div class="banner_central" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "GOPR0071.JPG" %>')">
   <div class="container">
     <div class= "text-center">
-      <h1>Cursos de Buceo</h1>
-      <p>Primeros Auxilios y Medio Ambiente</p>
+      <h1>Aprende a Bucear HOY</h1>
     </div>
   </div>
 </div>
 
-<div class="container text-center video">
-<h2>Aprenda a Bucear hoy!!</h2>
-  <%= video_tag "buceo.mp4", :size => "320x240", :controls => true %>
+<h2 class= "container text-center my-5 new-text">Todos los niveles</h2>
+<div class="container d-flex justify-content-around">
+  <div class="row">
+    <div class="col-12 col-lg-6 mr-5 pt-2">
+      <h4>Conoce este apasionante mundo</h4>
+      <p>Ya sea que estes tratando de bucear por primera vez, que quieras nuevas habilidades, o quieras ser un profesional del buceo, ¡Hay un curso adecuado para vos!. Todos los niveles: Cursos desde Open Water a Instructor Diver SDI</p>
+      <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%20-%20Informacion">Comenzá Hoy</a>
+    </div>
+    <div class="col-12 col-lg-6 container-right">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag "buceo_carrousel_1.jpg", class:"d-block w-100", alt: "Buceo" %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "buceo_carrousel_2.jpg", class:"d-block w-100", alt: "Buceo" %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "buceo_carrousel_3.jpg", class:"d-block w-100", alt: "Buceo" %>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
+
+<h2 class= "container text-center my-5 new-text">Apasionate</h2>
+<div class="container video mt-5 text-center ">
+  <%= video_tag "buceo.mp4", :size => "571X321", :controls => true %>
 </div>

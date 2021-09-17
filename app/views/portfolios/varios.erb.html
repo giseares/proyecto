@@ -21,4 +21,35 @@
     <% end %>
   </div>
 
+<%  @portfolios_profesional.each do |p| %>
+  <div class="container my-3 buceando border-left-0 border-info rounded-left rounded-lg">
+      <div class= "d-flex py-3">
+        <div>
+          <h3><%= p.name %></h3>
+          <p><%= p.content %></p>
+          <a class="btn btn-outline-success"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
 -->
+
+
+<p><%= image_tag(p.url_image)%></p>
+
+<div class="container ">
+  <div class="cards">
+    <%  @portfolios_profesional.each do |p| %>
+      <div class="card-category-portfolio d-flex justify-content-center align-items-center text-center mb-3" style="background-image: linear-gradient(rgba(51,60,135,0.3), rgba(51,60,135,0.9)), url('<%= p.url_image%>')">
+        <div>
+          <h3><%= p.name %></h3>
+          <p><%= p.content %></p>
+          <a class="btn btn-outline-success my-3"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>        
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

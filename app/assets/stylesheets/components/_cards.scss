@@ -73,18 +73,24 @@
 .card-category-portfolio {
   background-size: cover;
   background-position: center;
-  justify-content: center;
-  align-items: center;
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
 
   p{
     font-weight: 100;
     font-size: 12px;
+  }
+  
+  btn-holder {
+    justify-content: flex-end;
+    display: flex;
   }
 }
 

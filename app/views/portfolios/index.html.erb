@@ -19,18 +19,20 @@
   </div>
 </div>
 
-<%  @portfolios_profesional.each do |p| %>
-  <div class="container my-3 buceando border-left-0 border-info rounded-left rounded-lg">
-      <div class= "d-flex py-3">
-        <div>
-          <h3><%= p.name %></h3>
-          <p><%= p.content %></p>
-          <a class="btn btn-outline-success"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>
+<div class="container ">
+  <div class="cards">
+    <%  @portfolios_profesional.each do |p| %>
+      <div class="card-category-portfolio text-center" style="background-image: linear-gradient(rgba(51,60,135,0.3), rgba(51,60,135,0.9)), url(<%= image_path(p.url_image)%>)">
+        <h3><%= p.name %></h3>
+        <p><%= p.content %></p>
+        <div class="btn-holder">
+          <a class="btn btn-outline-success mb-2"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>       
         </div>
       </div>
-    </div>
+    <% end %>
   </div>
-<% end %>
+</div>
+
 
 <!--CONSULTORIA-->
 <div id=consultoria></div>
@@ -45,18 +47,18 @@
 
 </div>
 
-<div class="container ">
-  <%  @portfolios_consultoria.each do |p| %>
-    <div class="cards">
-      <div class="card-category-portfolio d-flex justify-content-center align-items-center text-center mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('<%= p.url_image%>')">
-        <div>
-          <h3><%= p.name %></h3>
-          <p><%= p.content %></p>
-          <a class="btn btn-outline-success my-3"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>        
+<div class="container mb-5 ">
+  <div class="cards d-flex justify-content-between">
+    <%  @portfolios_consultoria.each do |p| %>
+      <div class="card-category-portfolio text-center" style="background-image: linear-gradient(rgba(51,60,135,0.3), rgba(51,60,135,0.9)), url(<%= image_path(p.url_image)%>)">
+        <h3><%= p.name %></h3>
+        <p><%= p.content %></p>
+        <div class="btn-holder">
+          <a class="btn btn-outline-success mb-2"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=<%= p.name %>%20-%20Quiero%20mi%20programa">Pedi tu programa</a>       
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
 
 

@@ -1,74 +1,198 @@
+<!--BANNER-->
 <div class="banner_central" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "GOPR0071.JPG" %>')">
   <div class="container">
     <div class= "text-center">
-      <h1>Aprende a Bucear HOY</h1>
+      <h1>Buceo</h1>
+      <p>Aprende a bucear hoy.</p>
     </div>
   </div>
 </div>
 
-<h2 class= "container text-center my-5 new-text">Todos los niveles</h2>
+<!--BUCEO INTRO-->
+<div class="container mt-5">
+  <p>
+    El ser humano tiene un gran poder de adaptabilidad, tiene la capacidad de resolver situaciones realmente complejas en lugares y momentos inimaginables. De la misma forma en la que un buceador aprende a planificar sus inmersiones para alcanzar sus metas y entrena para la resolución inmediata de situaciones extremas, una persona en superficie puede enfrentar la misma adversidad, solo que las alternativas son más amplias, allí el aire nunca se acaba.
+  </p>
+  <p>
+    El coaching  es un método de aprendizaje transformacional, colaborativo que está orientado a resultados, este  proceso conversacional busca apoyar tu desarrollo a nivel personal o profesional para que puedas alcanzar metas especificas.
+    Soy Flor Cernuschi  y voy ayudarte a descubrir tu potencial y alcanzar con éxito tus metas.
+  </p>
+
+</div>
+
+<div class="container text-center my-5">
+  <h3>Cuales son nuestros cursos disponibles</h3>
+</div>
+
+<!--BUCEO CARDS-->
 <div class="container">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <%= image_tag "buceo.JPG", class:"card-img-top", alt: "Buceo" %> 
-        <div class="card-body">
-          <h5 class="card-title">Iniciales</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer text-center">
-          <a class="btn btn-primary"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%20Cursos">Inicia Hoy</a>
-        </div>
+  <div class="d-flex justify-content-center mb-5 row">
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("buceo_inicial", alt:"Buceo Inicial", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">La aventura comienza aqui</h5>
+        <p class="card-text">Comenza esta camino del buceo con el curso Inicial <strong> "Open Water Diver"</strong>, segui conociendo el buceo con el siguiente nivel:<strong>  "Advanced Open Water Diver"</strong> y culmina esta primer parte con el curso mas divertido de todos: <strong> "Rescue Diver"</strong></p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%Inicial%20-%20Informacion">Comenza tu curso ahora</a>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <%= image_tag "buceo.JPG", class:"card-img-top", alt: "Buceo" %> 
-        <div class="card-body">
-          <h5 class="card-title">Especialidades</h5>
-          <p class="card-text">Ya sos buzo certificado? Tenemos mas opciones para que sigas aprendiendo:</p>
-          <ul>
-            <li>Buceo Profundo</li>
-            <li>Traje Seco</li>
-            <li>Nitrox</li>
-          </ul>
-        </div>
-        <div class="card-footer text-center">
-          <a class="btn btn-primary"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%20Cursos">Nuestras especilidaes</a>
-        </div>
+
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("buceo_especilidades.png", alt:"Especialidades", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Especialidades</h5>
+        <p class="card-text">Ya sos buzo certificado? Tenemos mas opciones para que sigas aprendiendo:</p>
+          <div class="d-flex">
+            <ul class="text-left mr-3">
+              <li>Buceo Profundo</li>
+              <li>Solo Diver</li>
+              <li>Buceo Lateral</li>
+            </ul>
+            <ul class="text-left">
+              <li>Naufragios</li>
+              <li>Buceo Profundo</li>
+              <li>Nitrox</li>
+            </ul>
+          </div>
+        </p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%20Especialidades%20-%20Informacion">Elegi tu especialidad</a>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <%= image_tag "buceo.JPG", class:"card-img-top", alt: "Buceo" %> 
-        <div class="card-body">
-          <h5 class="card-title">Convertite en Profesional!</h5>
-          <p class="card-text">Tu camino profesional, arranca aqui. Convertite en Divemaster, Assitant Instructor o Instructor de Primeros Auxilios.</p>
-        </div>
-        <div class="card-footer text-center">
-          <a class="btn btn-primary"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%20Pro">Empeza tu camino profesional</a>
-        </div>
+
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("buceo_profesional.jpg", alt:"Profesional", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Convertite en Profesional!</h5>
+        <p class="card-text">Tu camino profesional, arranca aqui. Convertite en <strong>Divemaster</strong>, <strong>Assitant Instructor</strong> o <strong>Instructor de Primeros Auxilios</strong>.</p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%20Profesional%20-%20Informacion">Empeza tu camino</a>
       </div>
     </div>
-  </div>
-  <h2 class= "container text-center my-5 new-text">Apasionate</h2>
-  <div class="container video mt-5 text-center ">
-    <%= video_tag "buceo.mp4", :size => "700x500", :controls => true %>
+
+    <div class="card col-12 col-lg-6" style="width: 18rem;">
+      <%= link_to image_tag("buceo_snorkel", alt:"Snorkel", class:"rounded imagen-coach", :border=>0) %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Snorkeler</h5>
+        <p class="card-text">Es una actividad genial para las vacaciones,  permite observar peces y arrecifes cera de la playa, podes encontrarte con estrellas de mar o pulpos. Este deporte te permite acercarte a la vida subaquatica de una manera segura.</p>
+      </div>
+      <div class="d-flex align-items-end justify-content-center mb-2">
+        <a class="btn btn-outline-dark"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626&text=Buceo%20Snorkel%20-%20Informacion">Quiero Saber Mas</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!--PA-->
-<div class="jumbotron jumbotron-fluid mt-5 mb-5">
+<!--BUCEO METODOLOGIA-->
+<div class="container mt-5">
+  <h3>Nuestra metodología:</h3>
+
+  <p>
+  Un proceso de coaching se inicia con una entrevista inicial que sirve para definir en plan de acción, y en el que el coach y el cliente acuerdan el protocolo que se seguirá durante todo el plan. Un proceso de coaching se desarrolla en varias sesiones, durante las cuales el coachee toma consciencia de su forma de actuar. En las reuniones posteriores se trabaja en el desarrollo de soluciones o en el Plan de Acción. Por último, en la sesión final, se revisa todo el proceso y se verifica la ejecución de los objetivos inicialmente propuestos por el cliente.
+  </p>
+  <p>
+  La cantidad de sesiones dependerá del desafío planteado en la primer entrevista, la duración aconsejada para cada una de las sesiones es de una hora, pero también dependerá del espacio requerido por el coachee.
+  </p>
+  <p>
+  Un proceso normal puede llevar entre 6 y 8 sesiones que se dan en una espacialidad de 2 a 3 semanas. Las fechas de las sesiones se acuerdan entre el coach y cliente de manera flexible. En total todo el proceso puede durar entre 4 y 6 meses, aunque lo cierto es que empezaras a detectar cambios a partir de la primera sesión.
+  </p>
+</div>
+
+<!--PA  INTRO-->
+<div id="pa"  class="banner-text mb-5">
   <div class="container">
     <h1 class="display-4">Primeros Auxilios</h1>
     <p class="lead">Todo sobre el cuidado de las personas</p>
   </div>
-</div>
-
-<div id="pa"  class="container">
 
 </div>
 
+<!--PA CARDS-->
+<div class="container mt-5">
+  <div class="cards-pa">
+    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Cuidado de Personas</div>
+      <div class="card-body text-secondary">
+        <h5 class="card-title">Primeros Auxilios para Adultos, niños e infantes</h5>
+        <p class="card-text">Ser un cuidador significa que usted es la persona que está ahí cuando más se necesita ayuda. Esta certificacion le permitira manejar todo, desde las molestias del día a día hasta las principales emergencias médicas, incluido el paro cardíaco repentino.</p>
+      </div>
+    </div>
+    <div class="card border-success mb-3" style="max-width: 18rem;">
+      <div class="card-header">Empresas</div>
+      <div class="card-body text-success">
+        <h5 class="card-title">RCP + DEA en el trabajo</h5>
+        <p class="card-text">First Response Training International ofrece lo mejor en RCP y primeros auxilios en el lugar de trabajo para preparar a su equipo para evaluar y abordar rápidamente situaciones de emergencia.</p>
+      </div>
+    </div>
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+      <div class="card-header">Cuidado de Niños</div>
+      <div class="card-body">
+        <h5 class="card-title">Primeros Auxilios para niños</h5>
+        <p class="card-text">Los maestros, los proveedores de cuidado diurno, el personal del campamento, las niñeras y otras personas que cuidan a los niños están en una posición de responsabilidad única. Cuando alguien le confía a su hijo, cuenta con usted para mantenerlo a salvo, pase lo que pase.</p>
+      </div>
+    </div>
 
 
+    <div class="card border-success mb-3" style="max-width: 18rem;">
+      <div class="card-header">En el trabajo</div>
+      <div class="card-body text-success">
+        <h5 class="card-title">Patogenos Aereos</h5>
+        <p class="card-text">Patógenos como el coronavirus, la gripe y otros pueden propagarse rápidamente en el lugar de trabajo. Por esta razón, es imperativo que las empresas tomen todas las precauciones necesarias para garantizar que el lugar de trabajo se mantenga seguro.</p>
+      </div>
+    </div>
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+      <div class="card-header">Oxigeno</div>
+      <div class="card-body">
+        <h5 class="card-title">Proveedor de Oxigeno</h5>
+        <p class="card-text">Los buzos SCUBA, los profesionales del buceo y el personal de la embarcación se convierten en rescatadores más completos y aprenden cómo administrar oxígeno como un procedimiento de emergencia.</p>
+      </div>
+    </div>
+    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Lugar de Trabajo</div>
+      <div class="card-body text-secondary">
+        <h5 class="card-title">Patogenos de Sangre</h5>
+        <p class="card-text">Si usted es un salvavidas, niñera, padre o madre o si está en riesgo de estar expuesto a sangre o materiales que contienen sangre, aprenda cómo protegerse y proteger a los demás de patógenos transmitidos por la sangre.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--PA INSTRUCTOR-->
+<div id="pa"  class="banner-pa">
+  <div class="container">
+    <h2 class="display-4">¿Queres convertirte en Instructor?</h2>
+    <p class="lead">Aquí hay algunas razones por las que debería enseñar con First Response Training.</p>
+    <ol>
+      <li>Contamos con un sistema eLearning con pruebas y evaluaciones integradas</li>
+      <li>Sitio web fácil de usar</li>
+      <li>Proceso simple de registro de estudiantes</li>
+      <li>Precios competitivos y rentables</li>
+      <li>Plan de estudios acorde con los estándares internacionales actuales.</li>
+      <li>Estándares y materiales que cumplen con OSHA e ILCOR</li>
+      <li>Gente real, soporte real, servicio al cliente real</li>
+    </ol>
+  </div>
+  <div class="container video mt-5 text-center ">
+    <%= video_tag "pa.mp4", :size => "571x321", :controls => true %>
+  </div>
+
+</div>
+
+
+
+
+<!--MEDIO AMBIENTE-->
+
+<div class="banner_central mt-5" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url('<%= image_path "MA_unsplash_joseph-barrientos" %>')">
+  <div class="container">
+    <div class= "text-center">
+      <h3>Cuidado MedioAmbiental</h3>
+       <p>Cursos de concientizacion y uso racional de energia, agua y plasticos</p>
+    </div>
+  </div>
+</div>
 </div>

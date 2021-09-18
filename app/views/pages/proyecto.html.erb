@@ -1,34 +1,156 @@
-<div class="container mt-5">
-  <h2>Conoce nuestro recorrido</h2>
+<!--BANNER INICIAL-->
+<div class="banner_central" alt= "Proyecto Banner Inicial - ph:@andreaferreira" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "proyecto_banner_inicial.jpg" %>')">
+  <div class="container">
+    <div class= "text-center">
+      <h1>Nuestro proyecto</h1>
+      <p>Conoce nuestra viaje y porque emprendimos esta aventura.</p>
+    </div>
+  </div>
+</div>
+
+<!--COMO COMENZO ESTE VIAJE-->
+<div class="container text-center my-5">
+  <h2>Como comenzo este viaje...</h2>
+  <p>el camino hasta aqui</p>
+</div>
+
+<div class="banner-white py-5">
+  <div class="container">
+    <h3 class="text-left">Buceando en Buenos Aires - Argentina</h3> 
+    <div>
+      <p>Iniciamos el camino Open Water Diver en Enero de 2016, ese mismo años realizamos el curso de Advanced Diver. Durante 2017 realizamos nuestro curso de Rescue Diver, EFR y Nitrox. 2018 nos recibió en febrero como Divemaster y completamos nuestras especialidades para en Noviembre de 2018 convertirnos en OWSI PADI de la mano de Federico Rozado Course Director 318181</p>
+      <p>En paralelo, Flor realizo dos especialidades de la mano de TDI en buceo Tecnico:
+        <ul>
+          <li>SIDEMOUNT Diver</li>
+          <li>FULLCAVE Diver</li>
+        </ul>
+      </p>
+    </div>
+    <div class="cards">
+       <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_Inicial_CHECKOUT_OWD" %>')"> 
+        <div class="text"> 
+          <p>Cordoba - Argentina Checkout OWD Ene 2016</p>
+        </div> 
+      </div>
+      <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_Inicial_IE_OWSI" %>')"> 
+        <div class="text"> 
+          <p>Concordia - Argentina IE Nov 2018</p>
+        </div> 
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!--Flor Cernuschi-->
+<div class="container">
+  <h2 class="mt-5">Flor Cernuschi</h2>
+  <div class = "d-flex justify-content-around">
+    <div class = "d-flex flex-column lh-lg" >
+      <br>
+      <p><i class="fas fa-star"></i> Coaching Ontologico – ICF - Formacion</p>
+      <p><i class="fas fa-star"></i> RRPP y Comunicaciones</p>
+      <p><i class="fas fa-star"></i> Freelance developer, community manager and digital designer.</p>
+      <p><i class="fas fa-star"></i> Especialista en Marketing Digital,  Diseño de Imagen de Marca y Conceptualización.</p>
+      <p><i class="fas fa-star"></i> Diseño de la Comunicación y Piezas Varias, Diseño Packaging y Producto.</p>
+      <p><i class="fas fa-star"></i> Instructora SDI OWSI# 27932 e Instructora PADI OWSI #414002</p>
+      <p><i class="fas fa-star"></i> Instructora First Response Training #27932 e Instructora EFR #414002</p>
+      <p><i class="fas fa-star"></i> Instructora de: Deep, Sidemount, Dry Suit, Solo DIver y Nitrox</p>
+
+    </div>
+    <div>
+      <%= link_to image_tag("proyecto_seccion_2_flor.png", class:"imagen-small", alt: "Flor Cernuschi"), "https://www.linkedin.com/in/cernuschiflorencia", target: :_blank %>
+    </div>
+  </div>
+</div>
+
+<!--Gise Ares-->
+<div class="banner-white py-5">
+  <div class="container">
+    <h2 class="">Gise Ares</h2>
+    <div class = "d-flex justify-content-around">
+      <div>
+        <%= link_to image_tag("proyecto_seccion_2_gise.png", class:"imagen-small", alt: "Gise Ares"), "https://ar.linkedin.com/in/gares", target: :_blank %>
+      </div>
+
+      <div class = "d-flex flex-column lh-lg" >
+        <br>
+        <p><i class="fas fa-star"></i> Knowmad</p>
+        <p><i class="fas fa-star"></i> Full Stack Development – Lewagon Buenos Aires</p>
+        <p><i class="fas fa-star"></i> Licenciada en Administración y sistemas – ITBA.</p>
+        <p><i class="fas fa-star"></i> Magister en Dirección estratégica y tecnológica – ITBA.</p>
+        <p><i class="fas fa-star"></i> Especialista en procesos de Negocios.</p>
+        <p><i class="fas fa-star"></i> Instructora SDI OWSI# 27946 e Instructora PADI OWSI #414004</p>
+        <p><i class="fas fa-star"></i> Instructora First Response Training #27932 e Instructora EFR #414002</p>
+        <p><i class="fas fa-star"></i> Instructora First Response Training # 27946 e Instructora EFR #414004</p>
+        <p><i class="fas fa-star"></i> Instructora de Naufragios y Nitrox</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--El Proyecto-->
+<div class="container py-5">
+  <h3 class="text-left">El proyecto nace con 3 objetivos basicos:</h3> 
+  <div>
+    <ol>
+      <li>Llevar el buceo a toda Ámerica</li>
+      <li>Impartir cursos de primeros auxilios</li>
+      <li>Charlas de Medio Ambiente</li>
+    </ol>
+  </div>
+  <h3 class="text-left">Quienes son los beneficiarios de nuestro proyecto:</h3> 
+  <ul>
+    <ol><strong>Personas con acceso limitado a herramientas de sanidad</strong>, talleres de primeros auxilios a docentes de escuela rural, grupos de vulnerabilidad y e interesados en aprender</ol>
+    <ol><strong>Personas con movilidad reducida, hipoacusticos</strong>. Brindado una nueva oportunidad de sentirse completos.</ol>
+    <ol><strong>Fuerzas Publicas</strong>. Charlas y revalidas a la fuerzas de seguridad</ol>
+    <ol><strong>Divecenters:</strong> promoveremos el deporte contando los beneficios del mismo. Trabajo en conjunto para potenciar el divecenters y trabajando en especialidades que no tenga el centro</ol>
+  </ul>
 
   <div class="cards">
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "camino.jpg" %>')"> 
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_comunidad" %>')"> 
       <div class="text"> 
-        <h4> Buenos Aires </h4>
+        <p>Pto Madryn - Argentina Abril 2019</p>
+      </div> 
+    </div>
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_bomberos" %>')"> 
+      <div class="text"> 
+        <p>Mte Caseros - Argentina Agosto 2019</p>
       </div> 
     </div>  
-  
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "camino.jpg" %>')"> 
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_niños" %>')"> 
       <div class="text"> 
-        <h4> Buenos Aires </h4>
+        <p>Cordoba - Argentina Julio 2019</p>
+      </div> 
+    </div>
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_empresas" %>')"> 
+      <div class="text"> 
+        <p>Chaco - Argentina Septiembre 2019</p>
       </div> 
     </div>  
+  </div>
+</div>
 
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "camino.jpg" %>')"> 
+<!--En Los Medios-->
+<div class="banner-white py-5">
+  <div class="cards">
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_mte" %>')"> 
       <div class="text"> 
-        <h4> Buenos Aires </h4>
+        <p>Monte Caseros - Argentina</p>
+      </div> 
+    </div>
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_abc" %>')"> 
+      <div class="text"> 
+        <p>Piribebuy - Argentina</p>
       </div> 
     </div>  
-
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "camino.jpg" %>')"> 
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_saenz" %>')"> 
       <div class="text"> 
-        <h4> Buenos Aires </h4>
+        <p>Saenz Peña - Argentina</p>
       </div> 
-    </div>  
-
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "camino.jpg" %>')"> 
+    </div>
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_rdn" %>')"> 
       <div class="text"> 
-        <h4> Buenos Aires </h4>
+        <p>Asuncion - Paraguay</p>
       </div> 
     </div>  
   </div>

@@ -1,0 +1,22 @@
+
+.achievement {
+  display: grid;
+  grid-template-columns:  2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10em 10em;
+  grid-gap: 1em;
+  width: 100%;
+}
+
+.achievement hit:first-child {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+
+
+.news {
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr );
+  grid-template-rows: 10em;
+  grid-gap: 1em;
+}

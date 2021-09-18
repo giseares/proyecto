@@ -132,26 +132,32 @@
 
 <!--En Los Medios-->
 <div class="banner-white py-5">
+<h3 class="text-left">Calimba en los medios:</h3> 
   <div class="cards">
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_mte" %>')"> 
-      <div class="text"> 
-        <p>Monte Caseros - Argentina</p>
-      </div> 
-    </div>
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_abc" %>')"> 
-      <div class="text"> 
-        <p>Piribebuy - Argentina</p>
-      </div> 
-    </div>  
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_saenz" %>')"> 
-      <div class="text"> 
-        <p>Saenz Peña - Argentina</p>
-      </div> 
-    </div>
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion_4_noticias_rdn" %>')"> 
-      <div class="text"> 
-        <p>Asuncion - Paraguay</p>
-      </div> 
-    </div>  
+    <%  @portfolios_noticias.each do |p| %>
+      <div class="card-proyect"alt= "Portfolio ph: <%= p.url_image %>/Unsplash" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(p.url_image)%>)">
+        <div class="text"> 
+          <p><%= p.name %></p>
+        </div> 
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+<!--Grilla Prueba-->
+<div class="container">
+  <h2>Nuestros Logros</h2>
+  <div class="achievement">
+    <hit id="h1"><%= image_tag "proyecto_objetivos_gabriele-stravinskaite.jpg", class: "imagen-proyecto" %></hit>
+    <hit id="h2">Real Madrid 1-0 Manchester City (agg 1-0)</hit>
+    <hit id="h3">The dying art of headhunting tattoos</hit>
+    <hit id="h4">Reinventing China's hated 'abortion police'</hit>
+    <hit id="h5">Six reasons the election will make history - no matter who wins</hit>
+    <hit id="h6">Reinventing China's hated 'abortion police'</hit>
+    <hit id="h7">Six reasons the election will make history - no matter who wins</hit>
+        <hit id="h5">Six reasons the election will make history - no matter who wins</hit>
+    <hit id="h6">Reinventing China's hated 'abortion police'</hit>
+    <hit id="h7">Six reasons the election will make history - no matter who wins</hit>
   </div>
 </div>

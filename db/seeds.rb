@@ -179,3 +179,59 @@ consultoria = Portfolio.create!(
   - Marketing Digital",
   url_image: 'prd_diving_laya-clode.jpg'
 )
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Piribebuy - Paraguay",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_abc'
+)
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Monte Caseros - Argentina",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_mte'
+)
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Asuncion - Paraguay",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_rdn'
+)
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Saenz Peña - Argentina",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_saenz'
+)
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Sunchales- Argentina",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_santafe'
+)
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Nea - Argentina",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_mt3'
+)
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Mte Caseros - Argentina",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_mte2'
+)
+
+noticias = Portfolio.create!(
+  category: "Noticias",
+  name: "Busqueda en Google",
+  content: "",
+  url_image: 'proyecto_seccion_4_noticias_mas'
+)

@@ -19,6 +19,8 @@ class PagesController < ApplicationController
   end
 
   def proyecto
+    @portfolios_noticias = Portfolio.show_noticias
+  
   end
 
   def coaching

@@ -8,6 +8,7 @@
   </div>
 </div>
 
+
 <!--COMO COMENZO ESTE VIAJE-->
 <div class="container text-center my-5">
   <h2>Como comenzo este viaje...</h2>
@@ -27,7 +28,7 @@
       </p>
     </div>
     <div class="cards">
-       <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_Inicial_CHECKOUT_OWD" %>')"> 
+      <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_Inicial_CHECKOUT_OWD" %>')"> 
         <div class="text"> 
           <p>Cordoba - Argentina Checkout OWD Ene 2016</p>
         </div> 
@@ -41,11 +42,13 @@
   </div>
 </div>
 
+
+
 <!--Flor Cernuschi-->
 <div class="container">
   <h2 class="mt-5">Flor Cernuschi</h2>
-  <div class = "d-flex justify-content-around">
-    <div class = "d-flex flex-column lh-lg" >
+  <div class = "row d-flex justify-content-around">
+    <div class = "d-flex flex-column lh-lg col-12 col-lg-6" >
       <br>
       <p><i class="fas fa-star"></i> Coaching Ontologico – ICF - Formacion</p>
       <p><i class="fas fa-star"></i> RRPP y Comunicaciones</p>
@@ -57,7 +60,7 @@
       <p><i class="fas fa-star"></i> Instructora de: Deep, Sidemount, Dry Suit, Solo DIver y Nitrox</p>
 
     </div>
-    <div>
+    <div class = "col-12 col-lg-6 text-center">
       <%= link_to image_tag("proyecto_seccion_2_flor.png", class:"imagen-small", alt: "Flor Cernuschi"), "https://www.linkedin.com/in/cernuschiflorencia", target: :_blank %>
     </div>
   </div>
@@ -67,12 +70,12 @@
 <div class="banner-white py-5">
   <div class="container">
     <h2 class="">Gise Ares</h2>
-    <div class = "d-flex justify-content-around">
-      <div>
+    <div class = "row d-flex justify-content-around">
+      <div class = "col-12 col-lg-6 text-center">
         <%= link_to image_tag("proyecto_seccion_2_gise.png", class:"imagen-small", alt: "Gise Ares"), "https://ar.linkedin.com/in/gares", target: :_blank %>
       </div>
 
-      <div class = "d-flex flex-column lh-lg" >
+      <div class = "d-flex flex-column lh-lg col-12 col-lg-6" >
         <br>
         <p><i class="fas fa-star"></i> Knowmad</p>
         <p><i class="fas fa-star"></i> Full Stack Development – Lewagon Buenos Aires</p>
@@ -87,6 +90,7 @@
     </div>
   </div>
 </div>
+
 
 <!--El Proyecto-->
 <div class="container py-5">
@@ -132,118 +136,34 @@
 
 <!--En Los Medios-->
 <div class="banner-white py-5">
-<h3 class="text-left">Calimba en los medios:</h3> 
-  <div class="cards">
-    <%  @portfolios_noticias.each do |p| %>
-      <div class="card-proyect"alt= "Portfolio ph: <%= p.url_image %>/Unsplash" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(p.url_image)%>)">
-        <div class="text"> 
-          <p><%= p.name %></p>
-        </div> 
-      </div>
-    <% end %>
+  <div class="container">
+    <h3 class="text-left">Calimba en los medios:</h3> 
+    <p>Un resumen rapido de las notas que nos hicieron</p>
+    <div class="cards">
+      <%  @portfolios_noticias.each do |p| %>
+        <div class="card-proyect"alt= "Portfolio ph: <%= p.url_image %>/Unsplash" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(p.url_image)%>)">
+          <div class="text"> 
+            <p><%= p.name %></p>
+          </div> 
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 
 
-<!--Grilla Prueba-->
-<div class="container">
-  <h2>Nuestros Logros</h2>
-  <div class="achievement">
-    <hit id="h1"><%= image_tag "proyecto_objetivos_gabriele-stravinskaite.jpg", class: "imagen-proyecto" %></hit>
 
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h2"><i class="fas fa-heartbeat"></i></hit>
-          <p>Talleres de RCP</>
-          <ul>
-            <li>a Bomberos</li>
-            <li>la Comunidad</li>
-            <li>y escuelas rurales</li>
-          </ul>
+<!--GARLLERY-->
+
+<div class="gallery-container">
+  <%  @portfolios_gallery.each do |p| %>
+    <div class="gallery-item">
+      <p>
+        <%= image_tag(p.url_image) , :class => "gallery-img" %>
+      </p>
+      <div class= "gallery-title">
+        <p><%= p.content %></p>
       </div>
     </div>
-
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h3"><i class="fas fa-first-aid"></i></i></hit>
-          <p>Primeros Auxilios</>
-          <ul>
-            <li>a Empresas</li>
-            <li>a Bomberos</li>
-            <li>a la Comunidad</li>
-          </ul>
-      </div>
-    </div>
-    
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h4"><i class="fas fa-ambulance"></i></hit>
-          <p>Proveedor de Oxigeno</>
-          <ul>
-            <li>Revalida a</li>
-            <li>Bomberos</li>
-          </ul>
-      </div>
-    </div>
-    
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h4"><i class="fas fa-virus"></i></hit>
-          <p>Patogenos Areos</>
-          <ul>
-            <li>Taller gratuito</li>
-            <li>a la comunidad</li>
-          </ul>
-      </div>
-    </div>
-
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h4"><i class="fas fa-water"></i></hit>
-          <p>Buceo</>
-          <ul>
-            <li>Nuevos OWD</li>
-            <li>Mas AOWD</li>
-            <li>Rescues</li>
-          </ul>
-      </div>
-    </div>
-
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h4"><i class="fas fa-mask"></i></hit>
-          <p>DSD</>
-          <ul>
-            <li>En pileta</li>
-            <li>En canteras</li>
-          </ul>
-      </div>
-    </div>
-
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h4"><i class="fas fa-arrow-circle-up"></i></hit>
-          <p>Especialidades</>
-          <ul>
-            <li>Nitrox</li>
-            <li>Solo</li>
-            <li>T.Seco</li>
-          </ul>
-      </div>
-    </div>
-
-    <div class="card card-hits text-center">
-      <div class="card-body">
-          <hit id="h4"><i class="fas fa-arrow-circle-up"></i></hit>
-          <p>Consultoria</>
-          <ul>
-            <li>a Centros</li>
-            <li>de</li>
-            <li>Buce</li>
-          </ul>
-      </div>
-    </div>
-
-
-  </div>
+  <% end %>
 </div>

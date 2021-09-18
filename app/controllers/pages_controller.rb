@@ -20,6 +20,7 @@ class PagesController < ApplicationController
 
   def proyecto
     @portfolios_noticias = Portfolio.show_noticias
+    @portfolios_gallery = Portfolio.show_gallery
   
   end
 

@@ -42,8 +42,6 @@
   </div>
 </div>
 
-
-
 <!--Flor Cernuschi-->
 <div class="container">
   <h2 class="mt-5">Flor Cernuschi</h2>
@@ -91,7 +89,6 @@
   </div>
 </div>
 
-
 <!--El Proyecto-->
 <div class="container py-5">
   <h3 class="text-left">El proyecto nace con 3 objetivos basicos:</h3> 
@@ -134,6 +131,22 @@
   </div>
 </div>
 
+<!--GARLLERY-->
+
+<div class="banner-white py-5">
+  <h2 class= "pl-2">Conoce nuestro recorrido!!</h2>
+  <div class="gallery-container">
+    <p class= "text-center align-center"> <br>Después de haber conocido los cuatro continentes por tierra y agua, decidimos recorrer nuestro continente por tiempo completo en Kombi, no dejes de seguir nuestra aventura viajera en @combicalimbaok</p>
+    <%  @portfolios_gallery.each do |p| %>
+      <div class="gallery-item">
+        <%= image_tag(p.url_image , class:"gallery-img") %>
+        <p class= "gallery-title"><%= p.content %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
 <!--En Los Medios-->
 <div class="banner-white py-5">
   <div class="container">
@@ -149,21 +162,4 @@
       <% end %>
     </div>
   </div>
-</div>
-
-
-
-<!--GARLLERY-->
-
-<div class="gallery-container">
-  <%  @portfolios_gallery.each do |p| %>
-    <div class="gallery-item">
-      <p>
-        <%= image_tag(p.url_image) , :class => "gallery-img" %>
-      </p>
-      <div class= "gallery-title">
-        <p><%= p.content %></p>
-      </div>
-    </div>
-  <% end %>
 </div>

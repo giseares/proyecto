@@ -196,3 +196,8 @@
   list-style: none;
   padding: 0;
 }
+
+.card-hits:nth-child(9){
+    grid-column-start: span 2;
+
+}

@@ -148,18 +148,121 @@
 
 
 <!--En Los Medios-->
-<div class="banner-white py-5">
-  <div class="container">
-    <h3 class="text-left">Calimba en los medios:</h3> 
-    <p>Un resumen rapido de las notas que nos hicieron</p>
-    <div class="cards">
-      <%  @portfolios_noticias.each do |p| %>
-        <div class="card-proyect"alt= "Portfolio ph: <%= p.url_image %>/Unsplash" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(p.url_image)%>)">
-          <div class="text"> 
-            <p><%= p.name %></p>
-          </div> 
+
+<div class="container py-5 ">
+  <h3 class="text-left">Calimba en los medios:</h3> 
+  <p>Un resumen rapido de las notas que nos hicieron</p>
+  <div class="cards">
+    <%  @portfolios_noticias.each do |p| %>
+      <div class="card-proyect"alt= "Portfolio ph: <%= p.url_image %>/Unsplash" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(p.url_image)%>)">
+        <div class="text"> 
+          <p><%= p.name %></p>
+        </div> 
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+<!--Nuestros Logros-->
+<div class = "banner-white ">
+  <div class="container my-5">
+    <h2>Nuestros Logros</h2>
+    <div class="achivements">
+      <hit id="h1"><%= image_tag "proyecto_objetivos_gabriele-stravinskaite.jpg", class: "imagen-proyecto" %></hit>
+
+      <div class="card card-hits text-center">
+        <div class="card-body">
+            <hit id="h2"><i class="fas fa-heartbeat"></i></hit>
+            <p>Talleres de RCP</>
+            <ul>
+              <li>a Bomberos</li>
+              <li>la Comunidad</li>
+              <li>y escuelas rurales</li>
+            </ul>
         </div>
-      <% end %>
+      </div>
+
+      <div class="card card-hits text-center">
+        <div class="card-body">
+            <hit id="h3"><i class="fas fa-first-aid"></i></i></hit>
+            <p>Primeros Auxilios</>
+            <ul>
+              <li>a Empresas</li>
+              <li>a Bomberos</li>
+              <li>a la Comunidad</li>
+            </ul>
+        </div>
+      </div>
+      
+      <div class="card card-hits text-center">
+        <div class="card-body">
+            <hit id="h4"><i class="fas fa-ambulance"></i></hit>
+            <p>Proveedor de Oxigeno</>
+            <ul>
+              <li>Revalida a</li>
+              <li>Bomberos</li>
+            </ul>
+        </div>
+      </div>
+      
+      <div class="card card-hits text-center">
+        <div class="card-body">
+            <hit id="h5"><i class="fas fa-virus"></i></hit>
+            <p>Patogenos Areos</>
+            <ul>
+              <li>Taller gratuito</li>
+              <li>a la comunidad</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card card-hits text-center">
+        <div class="card-body">
+            <hit id="h6"><i class="fas fa-water"></i></hit>
+            <p>Buceo</>
+            <ul>
+              <li>Nuevos OWD</li>
+              <li>Mas AOWD</li>
+              <li>Rescues</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card card-hits text-center">
+        <div class="card-body">
+            <hit id="h7"><i class="fas fa-mask"></i></hit>
+            <p>DSD</>
+            <ul>
+              <li>En pileta</li>
+              <li>En canteras</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card card-hits text-center">
+        <div class="card-body">
+            <hit id="h8"><i class="fas fa-arrow-circle-up"></i></hit>
+            <p>Especialidades</>
+            <ul>
+              <li>Nitrox</li>
+              <li>Solo</li>
+              <li>T.Seco</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card card-hits text-center to_grow">
+        <div class="card-body">
+            <hit id="h9"><i class="fas fa-glasses"></i></hit>
+            <p>Consultoria</>
+            <ul>
+              <li>Centros</li>
+              <li>de Buceo</li>
+            </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

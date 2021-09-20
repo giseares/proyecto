@@ -3,5 +3,4 @@ class Portfolio < ApplicationRecord
   scope :show_consultoria, -> { where(category: ["Consultoría"]) }
   scope :show_noticias, -> { where(category: ["Noticias"]) }
   scope :show_gallery, -> { where(category: ["Gallery"]) }
-  
 end

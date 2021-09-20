@@ -1,5 +1,5 @@
 <!--BANNER INICIAL-->
-<div class="banner_central" alt= "Proyecto Banner Inicial - ph:@andreaferreira" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "proyecto_banner_inicial.jpg" %>')">
+<div class="banner_central" alt= "Proyecto Banner Inicial - ph:@andreaferreira" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path "proyecto_banner_inicial_jphkl0" %>')">
   <div class="container">
     <div class= "text-center">
       <h1>Nuestro proyecto</h1>
@@ -28,12 +28,12 @@
       </p>
     </div>
     <div class="cards">
-      <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_Inicial_CHECKOUT_OWD" %>')"> 
+      <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_Inicial_CHECKOUT_OWD_yzgcyf" %>')"> 
         <div class="text"> 
           <p>Cordoba - Argentina Checkout OWD Ene 2016</p>
         </div> 
       </div>
-      <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_Inicial_IE_OWSI" %>')"> 
+      <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_Inicial_IE_OWSI_wp3isl" %>')"> 
         <div class="text"> 
           <p>Concordia - Argentina IE Nov 2018</p>
         </div> 
@@ -59,7 +59,7 @@
 
     </div>
     <div class = "col-12 col-lg-6 text-center">
-      <%= link_to image_tag("proyecto_seccion_2_flor.png", class:"imagen-small", alt: "Flor Cernuschi"), "https://www.linkedin.com/in/cernuschiflorencia", target: :_blank %>
+      <%= link_to cl_image_tag("proyecto_seccion_2_flor_hmcqsd", class:"imagen-small", alt: "Flor Cernuschi"), "https://www.linkedin.com/in/cernuschiflorencia", target: :_blank %>
     </div>
   </div>
 </div>
@@ -70,7 +70,7 @@
     <h2 class="">Gise Ares</h2>
     <div class = "row d-flex justify-content-around">
       <div class = "col-12 col-lg-6 text-center">
-        <%= link_to image_tag("proyecto_seccion_2_gise.png", class:"imagen-small", alt: "Gise Ares"), "https://ar.linkedin.com/in/gares", target: :_blank %>
+        <%= link_to cl_image_tag("proyecto_seccion_2_gise_jusnmt", class:"imagen-small", alt: "Gise Ares"), "https://ar.linkedin.com/in/gares", target: :_blank %>
       </div>
 
       <div class = "d-flex flex-column lh-lg col-12 col-lg-6" >
@@ -108,22 +108,22 @@
   </ul>
 
   <div class="cards">
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_comunidad" %>')"> 
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion3_comunidad_aslc7u" %>')"> 
       <div class="text"> 
         <p>Pto Madryn - Argentina Abril 2019</p>
       </div> 
     </div>
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_bomberos" %>')"> 
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion3_bomberos_gglqf2" %>')"> 
       <div class="text"> 
         <p>Mte Caseros - Argentina Agosto 2019</p>
       </div> 
     </div>  
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_niños" %>')"> 
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion3_niños_qhdiwx" %>')"> 
       <div class="text"> 
         <p>Cordoba - Argentina Julio 2019</p>
       </div> 
     </div>
-    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "proyecto_seccion3_empresas" %>')"> 
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion3_empresas_hknbzs" %>')"> 
       <div class="text"> 
         <p>Chaco - Argentina Septiembre 2019</p>
       </div> 
@@ -141,14 +141,68 @@
   <h3 class="text-left">Calimba en los medios:</h3> 
   <p>Un resumen rapido de las notas que nos hicieron</p>
   <div class="cards">
-    <%  @portfolios_noticias.each do |p| %>
-      <div class="card-proyect"alt= "Portfolio ph: <%= p.url_image %>/Unsplash" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(p.url_image)%>)">
-        <div class="text"> 
-          <p><%= p.name %></p>
-        </div> 
-      </div>
-    <% end %>
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_abc_rtrow1" %>')">
+      <div class="text"> 
+        <p>Piribebu - Paraguay</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_mte_vhsvka" %>')">
+      <div class="text"> 
+        <p>Monte Caseros - Argentina</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_rdn_ztqx8u" %>')">
+      <div class="text"> 
+        <p>Asuncion - Paraguay</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
+
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_santafe_bovyab" %>')">
+      <div class="text"> 
+        <p>Santa Fe - Argentina</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_saenz_vxwzeq" %>')">
+      <div class="text"> 
+        <p>Saenz Peña- Argentina</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_mt3_xl6gna" %>')">
+      <div class="text"> 
+        <p>Nea - Argentina</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_mte2_xbsxoq" %>')">
+      <div class="text"> 
+        <p>Mte Caseros - Argentina</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
+    <div class="card-proyect" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "proyecto_seccion_4_noticias_todas_ipg7ow" %>')">
+      <div class="text"> 
+        <p>Busqueda en Google</p>
+        <%= link_to "Buceo", buceo_path %> 
+      </div> 
+    </div>
+
   </div>
+
+
+
+
 </div>
 
 
@@ -158,7 +212,7 @@
   <div class="container my-5">
     <h2>Nuestros Logros</h2>
     <div class="achivements">
-      <hit id="h1"><%= image_tag "proyecto_objetivos_gabriele-stravinskaite.jpg", class: "imagen-proyecto" %></hit>
+      <hit id="h1"><%= cl_image_tag "proyecto_objetivos_gabriele-stravinskaite_kohdv5", class: "imagen-proyecto" %></hit>
 
       <div class="card card-hits text-center">
         <div class="card-body">

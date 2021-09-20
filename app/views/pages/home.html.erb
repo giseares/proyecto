@@ -1,5 +1,5 @@
 <!--BANNER-->
-<div class="banner img-fluid" alt= "Home Banner Inicial - ph: @combicalimba"  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "home_banner_inicial.jpg" %>')">
+<div class="banner img-fluid" alt= "Home Banner Inicial - ph: @combicalimba"  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path "home_banner_inicial_vqbmxv" %>')">
   <div class="container">
     <h1>Calimba</h1>
     <p>Profesionales en el camino</p>
@@ -17,8 +17,8 @@
       <div class="col-12 col-lg-6 leftspace text-center mb-4">
         <h2>Sobre Calimba</h2>
         <div class=" d-flex justify-content-center mb-3">
-          <%= link_to image_tag("home_profile_gise", class: "avatar-large mr-2", alt: "Profile Gise - ph@andreaferreira"), "https://www.linkedin.com/in/gares/", target: :_blank %>
-          <%= link_to image_tag("home_profile_flor", class: "avatar-large", alt: "Profile Flor - ph@andreaferreira"), "https://www.linkedin.com/in/cernuschiflorencia/",target: :_blank %>
+          <%= link_to cl_image_tag("home_profile_gise_efmahy", class: "avatar-large mr-2", alt: "Profile Gise - ph@andreaferreira"), "https://www.linkedin.com/in/gares/", target: :_blank %>
+          <%= link_to cl_image_tag("home_profile_flor_jm7lvy", class: "avatar-large", alt: "Profile Flor - ph@andreaferreira"), "https://www.linkedin.com/in/cernuschiflorencia/",target: :_blank %>
         </div>
         <p> <span id="aboutus-typed-text"></span> </p>
       </div>
@@ -44,7 +44,7 @@
   <div class="row d-flex justify-content-around alert-text">
     <div class="col-12 col-lg-3 card-trip mr-2 mb-2">
       <figure>
-        <%= link_to image_tag("home_servicios_chris-montgomery.jpg", alt:"Formacion Profesional - ph@chris-montgomery/unsplash", class:"img", :border=>0), portfolios_path %>
+        <%= link_to cl_image_tag("home_servicios_chris-montgomery_punj0v", alt:"Formacion Profesional - ph@chris-montgomery/unsplash", class:"img", :border=>0), portfolios_path %>
         <div class="card-trip-infos">
           <div>
             <h5 class= "m-2 text-center"><strong>Formación Profesional</strong></h5>
@@ -59,7 +59,7 @@
 
     <div class="col-12 col-lg-3 card-trip mr-2 mb-2">
       <figure>
-        <%= link_to image_tag("home_servicios_consultoria.jpeg", alt:"Consultoria - ph@combicalimba", class:"img", :border=>0),   portfolios_path(anchor: "consultoria") %>
+        <%= link_to cl_image_tag("home_servicios_consultoria_oskujb", alt:"Consultoria - ph@combicalimba", class:"img", :border=>0),   portfolios_path(anchor: "consultoria") %>
         <div class="card-trip-infos">
           <div>
             <h5 class= "m-2 text-center"> <strong>Programa de Consultoría</strong></h5>
@@ -74,7 +74,7 @@
 
     <div class="col-12 col-lg-3 card-trip mr-2 mb-2">
       <figure>
-        <%= link_to image_tag("home_servcios_coaching.jpg", alt:"Servicios Coaching - ph@andreaferreira", class:"img", :border=>0), :action => 'coaching', :controller => 'pages' %>
+        <%= link_to cl_image_tag("home_servcios_coaching_ewabka", alt:"Servicios Coaching - ph@andreaferreira", class:"img", :border=>0), :action => 'coaching', :controller => 'pages' %>
         <div class="card-trip-infos">
           <div>
             <h5 class= "m-2 text-center"><strong>Coaching Empresarial</strong></h5>
@@ -94,7 +94,7 @@
 </div>
 
 <!--BANNER BUCEADNO-->
-<div class="banner_central" alt= "Home Banner Buceando - ph: @combicalimba"  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "home_buceo_banner_proyecto.jpg" %>')">
+<div class="banner_central" alt= "Home Banner Buceando - ph: @combicalimba"  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path "home_buceo_banner_proyecto_hsn6wv" %>')">
   <div class="container">
     <div class= "text-center">
       <h1>Calimba</h1>
@@ -112,18 +112,18 @@
   </div>
 
   <div class="row d-flex justify-content-between text-center mb-5">
-    <div class="col-12 col-lg-3 card-category d-flex flex-column" alt= "Home Buceo Buceo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "home_buceo_buceo.jpg" %>')">
+    <div class="col-12 col-lg-3 card-category d-flex flex-column" alt= "Home Buceo Buceo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_buceo_s81c8n" %>')">
       <p class="text">
         <%= link_to "Buceo", buceo_path %> 
       </p>
     </div>
 
-    <div class="col-12 col-lg-3 card-category d-flex flex-column" alt= "Home Buceo Primeros Auxilios - ph:@crismerz" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "home_buceo_primeros_auxilios.png" %>')">
+    <div class="col-12 col-lg-3 card-category d-flex flex-column" alt= "Home Buceo Primeros Auxilios - ph:@crismerz" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_primeros_auxilios_cdgeoi" %>')">
       <p  class="text" >
         <%= link_to " Instructor Primeros Auxilios", buceo_path(anchor: "pa") %> 
       </p>
     </div>
-    <div class="col-12 col-lg-3 card-category d-flex flex-column"  alt= "Home Buceo Cuidado Ambiental - ph:@combicalimba" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= image_path "home_buceo_medio_ambiente.png" %>')">
+    <div class="col-12 col-lg-3 card-category d-flex flex-column"  alt= "Home Buceo Cuidado Ambiental - ph:@combicalimba" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_medio_ambiente_acmh9l" %>')">
       <p  class="text" > 
         <%= link_to "Cuidado del Medio Ambiente", buceo_path(anchor: "ma") %> 
       </p>

@@ -1,4 +1,3 @@
-//CARD-TRIP
 .card-trip {
   overflow: hidden;
   background: white;
@@ -33,8 +32,6 @@
 
 }
 
-
-//CARD CATEGORY
 .card-category {
   background-size: cover;
   background-position: center;
@@ -95,7 +92,6 @@
   }
 }
 
-//CARD PROYECT
 .card-proyect {
   background-size: cover;
   background-position: center;
@@ -163,12 +159,10 @@
 
 }
 
-
 .card-title{
   color: orange;
   font-weight: 500;
 }
-
 
 .cards-pa{
   display: grid;
@@ -189,16 +183,21 @@
   }
 }
 
-.card-hits{
-  border: 1px, solid, orange; 
-
+.achivements{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  width: 100%;
 }
+
+@media(max-width: 768px) {
+  .achivements {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card-hits ul{
   list-style: none;
   padding: 0;
 }
 
-.card-hits:nth-child(9){
-    grid-column-start: span 2;
-
-}

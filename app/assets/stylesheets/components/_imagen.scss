@@ -16,10 +16,11 @@
   height: 400px;
 }
 
-.imagen-proyecto {
+.imagen-proyecto{
   width: 400px;
-  height: 630px;
+  height: 100%;
   object-fit: cover;
+  background-size: cover;
 }
 
 .gallery-container{

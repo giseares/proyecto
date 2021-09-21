@@ -171,12 +171,10 @@ procesos = Portfolio.create!(
 
 consultoria = Portfolio.create!(
   category: "Consultoría",
-  name: "Consultoría Instructores de Buceo",
+  name: "Consultoría Centros de Buceo",
   content: "Los programas pueden adaptarse según las necesidades de cada centro
   - Consultoría integral sobre su centro
-  - Armado de plan de negocios / Business Case
-  - Programa de Community Manager
-  - Marketing Digital",
+  - Armado de plan de negocios / Business Case",
   url_image: 'prd_diving_laya-clode.jpg'
 )
 

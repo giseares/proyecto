@@ -178,3 +178,228 @@ consultoria = Portfolio.create!(
   url_image: 'prd_diving_laya-clode.jpg'
 )
 
+puts "Open Uri"
+require "open-uri"
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_01L_zo8rui.jpg')
+uno = Portfolio.create!( 
+  category: "Gallery",
+  name: "Large",
+  content: "Viedma - Argentina"
+)
+uno.photo.attach(io: file, filename: 'proyecto_gallery_01L_zo8rui', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_02L_cioalr.jpg')
+dos = Portfolio.create!( 
+  category: "Gallery",
+  name: "Large",
+  content: "Ushuaia - Argentina"
+)
+dos.photo.attach(io: file, filename: 'proyecto_gallery_02L_cioalr', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_03L_qhwuvc')
+tres = Portfolio.create!( 
+  category: "Gallery",
+  name: "Large",
+  content: "Venecia - Italia"
+)
+tres.photo.attach(io: file, filename: 'proyecto_gallery_03L_qhwuvc', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_04A_sbgpwf')
+cuatro = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Paris - Francia"
+)
+cuatro.photo.attach(io: file, filename: 'proyecto_gallery_04A_sbgpwf', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_05A_hytvtb')
+cinco = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Hong Kong"
+)
+cinco.photo.attach(io: file, filename: 'proyecto_gallery_05A_hytvtb', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_06L_yvjh2g')
+seis = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Athenas - Grecia"
+)
+seis.photo.attach(io: file, filename: 'proyecto_gallery_06L_yvjh2g', content_type: 'image/png')
+
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_07L_toze3d')
+siete = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Athenas - Grecia"
+)
+siete.photo.attach(io: file, filename: 'proyecto_gallery_07L_toze3d', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_08L_k2bqd2')
+ocho = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Mikonos - Grecia"
+)
+ocho.photo.attach(io: file, filename: 'proyecto_gallery_08L_k2bqd2', content_type: 'image/png')
+
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_09L_onfbet')
+nueve = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Jerusalen - Israel"
+)
+nueve.photo.attach(io: file, filename: 'proyecto_gallery_09L_onfbet', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_10A_rvpsw5')
+diez = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "SanBer - Paraguay"
+)
+diez.photo.attach(io: file, filename: 'proyecto_gallery_10A_rvpsw5', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_11L_umq25c')
+once = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "SanBer - Paraguay"
+)
+once.photo.attach(io: file, filename: 'proyecto_gallery_11L_umq25c', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_12L_eqxkqe')
+doce = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "SanBer - Paraguay"
+)
+doce.photo.attach(io: file, filename: 'proyecto_gallery_12L_eqxkqe', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_13L_d5vzzr')
+trece = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "SanBer - Paraguay"
+)
+trece.photo.attach(io: file, filename: 'proyecto_gallery_13L_d5vzzr', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_14L_gnfdc8')
+catorce = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "SanBer - Paraguay"
+)
+catorce.photo.attach(io: file, filename: 'proyecto_gallery_14L_gnfdc8', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_15L_cw2fbt')
+quince = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "SanBer - Paraguay"
+)
+quince.photo.attach(io: file, filename: 'proyecto_gallery_15L_cw2fbt', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_16L_ggjxd7')
+dieciseis = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Islas Maldivas"
+)
+dieciseis.photo.attach(io: file, filename: 'proyecto_gallery_16L_ggjxd7', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_17L_otoenp')
+diesiete = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Giza - Egipt"
+)
+diesiete.photo.attach(io: file, filename: 'proyecto_gallery_17L_otoenp', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_18A_wryrov')
+diesioho = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Giza - Egipt"
+)
+diesioho.photo.attach(io: file, filename: 'proyecto_gallery_18A_wryrov', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_19L_h3sjmg')
+dieznueve = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Al Ain - Emiratos Arabes"
+)
+dieznueve.photo.attach(io: file, filename: 'proyecto_gallery_19L_h3sjmg', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_20A_ryahue')
+veinte = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Dubai - Emiratos Arabes"
+)
+veinte.photo.attach(io: file, filename: 'proyecto_gallery_20A_ryahue', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_21A_ozfo0q')
+veintiuno = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Roma - Italia"
+)
+veintiuno.photo.attach(io: file, filename: 'proyecto_gallery_21A_ozfo0q', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_22A_rw8pmg')
+veintedos = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Pisa - Italia"
+)
+veintedos.photo.attach(io: file, filename: 'proyecto_gallery_22A_rw8pmg', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_23L_fdx5kx')
+veintetres = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Beijing - China"
+)
+veintetres.photo.attach(io: file, filename: 'proyecto_gallery_23L_fdx5kx', content_type: 'image/png')
+
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_24L_yctith')
+veinticuatro = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Ushuaia - Argentina"
+)
+veinticuatro.photo.attach(io: file, filename: 'proyecto_gallery_24L_yctith', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_25L_vmx2ui')
+veinticinco = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Islas Maldivas"
+)
+veinticinco.photo.attach(io: file, filename: 'proyecto_gallery_25L_vmx2ui', content_type: 'image/png')
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_26L_bccz1s')
+veintiseis= Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "Mar Rojo - Egipto"
+)
+veintiseis.photo.attach(io: file, filename: 'proyecto_gallery_26L_bccz1s', content_type: 'image/png')
+
+
+file = URI.open('https://res.cloudinary.com/giseares/image/upload/v1632154876/proyecto_gallery_27L_imwh19')
+veintisiete = Portfolio.create!( 
+  category: "Gallery",
+  name: "Alta",
+  content: "San Juan - Argentina"
+)
+veintisiete.photo.attach(io: file, filename: 'proyecto_gallery_27L_imwh19', content_type: 'image/png')
+
+
+puts "end"

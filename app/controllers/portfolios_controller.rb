@@ -4,6 +4,7 @@ class PortfoliosController < ApplicationController
   def index
     @portfolios_profesional = Portfolio.show_profesional 
     @portfolios_consultoria = Portfolio.show_consultoria
+    @portfolios_gallery = Portfolio.show_gallery
   end
 end
 

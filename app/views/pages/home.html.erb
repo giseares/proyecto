@@ -6,7 +6,7 @@
     <p> 
       <span id="banner-typed-text"></span>
     </p>
-    <a class="btn btn-outline-secondary"  target="_blank" href="https://api.whatsapp.com/send?phone=54911533842626">WhatsApp</a>
+    <a class="btn btn-outline-secondary"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626">WhatsApp</a>
   </div>
 </div>
 
@@ -22,16 +22,13 @@
         </div>
         <p> <span id="aboutus-typed-text"></span> </p>
       </div>
-
       <div class="col-12 col-lg-6 text-center">
         <p>Calimba es un proyecto con el cual hemos comenzado a recorrer el continente americano impartiendo programas de educación continua, brindando servicios de consultoría, mentoring y coaching tanto a particulares como empresas.
         Nuestro porfolio contiene más de veinte programas customizados según la necesidad del usuario.
         Nuestra misión es ayudarte en tu desarrollo profesional, contribuir con el crecimiento de tu negocio y acompañarte a descubrir un nuevo mundo de profesionales en el camino. </p>
         <p><strong>Calimba está de paso</strong>, pero deja huellas.</p>
       </div>
-
     </div>
-
   </div>    
 </div>
 
@@ -65,7 +62,8 @@
             <h5 class= "m-2 text-center"> <strong>Programa de Consultoría</strong></h5>
             <p class ="text-center">A partir de las necesidades de la gerencia y una serie de entrevistas in situ la mejora de procesos
             se trata de identificar y abordar las ineficiencias que desperdician recursos/capital y añaden
-            costos.</p>
+            costos.
+            </p>
           </div>
         </div>
         <figcaption>ph:@combicalimba</figcaption>
@@ -80,7 +78,8 @@
             <h5 class= "m-2 text-center"><strong>Coaching Empresarial</strong></h5>
             <p class ="text-center">El coach te ayuda a ver su entorno, abre su visión y le ayuda a pensar en tus habilidades para
             desarrollar. Un valioso compañero externo que camina a su lado por un tiempo bien definido
-            para que su personal encuentre nuevas soluciones.</p>
+            para que su personal encuentre nuevas soluciones.
+            </p>
           </div>
         </div>
         <figcaption>ph:@andreaferreira</figcaption>
@@ -88,18 +87,18 @@
     </div>
   </div>
   <div class="d-flex justify-content-center align-items-center mt-5">
-    <a class="btn btn-outline-info btn-lg mr-3"  target="_blank" href="https://api.whatsapp.com/send?phone=54911533842626">Empresa</a>
-    <a class="btn btn-outline-warning btn-lg"  target="_blank" href="https://api.whatsapp.com/send?phone=54911533842626">Particular</a>
+    <a class="btn btn-outline-info btn-lg mr-3"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626">Empresa</a>
+    <a class="btn btn-outline-warning btn-lg"  target="_blank" href="https://api.whatsapp.com/send?phone=5491153842626">Particular</a>
   </div>
 </div>
 
-<!--BANNER BUCEADNO-->
+<!--BANNER BUCEANDO-->
 <div class="banner_central" alt= "Home Banner Buceando - ph: @combicalimba"  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path "home_buceo_banner_proyecto_hsn6wv" %>')">
   <div class="container">
     <div class= "text-center">
       <h1>Calimba</h1>
       <p>Buceando por America</p>
-        <%= link_to "Conoce nuestro recorrido", proyecto_path, :class => "btn btn-outline-secondary" %>
+      <%= link_to "Conoce nuestro recorrido", proyecto_path, :class => "btn btn-outline-secondary" %>
     </div>
   </div>
 </div>
@@ -112,24 +111,21 @@
   </div>
 
   <div class="row d-flex justify-content-between text-center mb-5">
-    <div class="col-12 col-lg-3 card-category d-flex flex-column" alt= "Home Buceo Buceo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_buceo_s81c8n" %>')">
+    <div class="col-12 col-lg-3 card-category d-flex flex-column mb-1" alt= "Home Buceo Buceo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_buceo_s81c8n" %>')">
       <p class="text">
         <%= link_to "Buceo", buceo_path %> 
       </p>
     </div>
 
-    <div class="col-12 col-lg-3 card-category d-flex flex-column" alt= "Home Buceo Primeros Auxilios - ph:@crismerz" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_primeros_auxilios_cdgeoi" %>')">
+    <div class="col-12 col-lg-3 card-category d-flex flex-column mb-1" alt= "Home Buceo Primeros Auxilios - ph:@crismerz" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_primeros_auxilios_cdgeoi" %>')">
       <p  class="text" >
         <%= link_to " Instructor Primeros Auxilios", buceo_path(anchor: "pa") %> 
       </p>
     </div>
-    <div class="col-12 col-lg-3 card-category d-flex flex-column"  alt= "Home Buceo Cuidado Ambiental - ph:@combicalimba" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_medio_ambiente_acmh9l" %>')">
+    <div class="col-12 col-lg-3 card-category d-flex flex-column pb-1"  alt= "Home Buceo Cuidado Ambiental - ph:@combicalimba" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('<%= cl_image_path "home_buceo_medio_ambiente_acmh9l" %>')">
       <p  class="text" > 
         <%= link_to "Cuidado del Medio Ambiente", buceo_path(anchor: "ma") %> 
       </p>
     </div>
   </div>
 </div>
-
-
-

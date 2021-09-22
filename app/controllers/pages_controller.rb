@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :buceo, :proyecto , :coaching]
+  skip_before_action :authenticate_user!, only: [ :home, :buceo, :proyecto, :coaching, :prueba]
 
   def home
   #  if user_signed_in?
@@ -9,14 +9,11 @@ class PagesController < ApplicationController
   #  end
   end
 
-  def portfolio
-  end
+  def portfolio; end
 
-  def buceo
-  end
+  def buceo; end
 
-  def blogs
-  end
+  def blogs; end
 
   def proyecto
     @portfolios_noticias = Portfolio.show_noticias
@@ -24,7 +21,8 @@ class PagesController < ApplicationController
   
   end
 
-  def coaching
-  end
+  def coaching; end
+
+  def prueba; end  
 
 end

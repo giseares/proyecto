@@ -35,7 +35,7 @@ lean = Portfolio.create!(
   category: "Formacion_Profesional",
   name: "Lean Startup",
   content: "Conocer la metodología Lean Startup. Emprender pensando en el cliente a través del
-  Customer Development, así como definir y crear un Producto Mínimo Variable (PMV).",
+  Customer Development, así como definir y crear un Producto Mínimo Viable (PMV).",
   url_image: 'jake-hills'
 )
 lean.photo.attach(io: file, filename: '
@@ -57,7 +57,7 @@ cambio = Portfolio.create!(
   name: "Gestión de Cambio Organizacional",
   content: "Impulsar un proceso de cambio no siempre es fácil, requiere de liderazgo positivo y de
   personas capacitadas para tener un cambio alineado a las competencias que busca el
-  mercado..",
+  mercado.",
   url_image: 'kalei-peek'
 )
 cambio.photo.attach(io: file, filename: 'prd_cambio_kalei-peek_05_akrk3x', content_type: 'image/png')
@@ -158,7 +158,7 @@ cliente = Portfolio.create!(
   name: "Atención al Cliente",
   content: "Desarrollar habilidades para tratar efectivamente a las personas desde la parte humana y
   poder identificar las necesidades más ocultas, desde la escucha empática, el respeto y el
-  logro de los objetivos de venta..",
+  logro de los objetivos de venta.",
   url_image: 'arlington-research'
 )
 cliente.photo.attach(io: file, filename: 'prd_cliente_arlington-research_15_vc8bau', content_type: 'image/png')

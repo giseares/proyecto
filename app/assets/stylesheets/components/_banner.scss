@@ -62,8 +62,10 @@
   height: 200px;
   width: 100%;
   background-position: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-  h1 {
+  h2 {
     margin: 0;
     padding-top: 30px ;
     color: white;
@@ -110,4 +112,13 @@
 
 .banner-white{
   background-color: white;
+
+  .a:hover{
+    background-color: black;
+  }
+}
+
+.banner-white ul{
+  list-style: none;
+  padding: 0;
 }

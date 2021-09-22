@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     get 'blogs', to: 'pages#blogs'
     get 'proyecto', to: 'pages#proyecto'
     get 'coaching', to: 'pages#coaching'
+    get 'prueba', to: 'pages#prueba'
     resources :portfolios, only: :index
 end
